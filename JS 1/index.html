@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="home-screen" id="home-screen">
+        <button class="pixel-button" onclick="showOverlay()">START QUIZ</button>
+        <div class="overlay" id="overlay">
+           <!-- <button class="pixel-button-1" onclick="hideOverlay()">Close</button> -->
+            <div class="instructions">
+                <h1>How to play?</h1>
+                <p>Answer as many questions as possible within 2 minutes</p>
+                <p>Set, Steady, Go!</p>
+                <button class="start" onclick="startQuiz()">Start</button>
+            </div>
+        </div>
+    </div>
+    <div class="quiz-container" id="quiz-container">
+        <div class="question" id="question"></div>
+        <div class="choices" id="choices"></div>
+    </div>  
+
+    <audio id="quiz-soundtrack" loop>
+        <source src="sound.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

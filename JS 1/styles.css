@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');
+
+body {
+    background-image: url(https://img.freepik.com/free-vector/digital-sci-fi-cyber-grid-lines-geometric-wallpaper-design_1017-53609.jpg?w=1060&t=st=1721663569~exp=1721664169~hmac=e14e9f1fe0dcf25af59342f4428e6f7ce8567c26f11e098605921b9f0b20a664);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pixel-button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    padding: 20px 40px;
+    color: white;
+    background-color: #0c0269;
+    border: 5px solid #0c0132;
+    box-shadow: 0 0 0 5px #0b0136, 0 0 0 10px #04013e;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.pixel-button:active {
+    background-color: #0099ff;
+    box-shadow: 0 0 0 5px #00d9ff, 0 0 0 10px #035976;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.instructions > h1 {
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 20px;
+}
+
+.instructions > p {
+    font-family: 'Mina', sans-serif;
+}
+
+.start {
+    font-family: 'Mina', cursive;
+}
+
+.quiz-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.question {
+    font-family: 'Mina', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice {
+    font-family: 'Mina', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #0c0269;
+    color: white;
+    border: 2px solid #0c0132;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choice:hover {
+    background-color: #0099ff;
+}
